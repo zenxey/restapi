@@ -24,4 +24,4 @@ app.get('/', (req, res) => {
 mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () => console.log('connected to DB!'));
 app.listen(3000);
 
-// DB_CONNECTION = mongodb+srv://test:Lightmode@rest.e3hjh.mongodb.net/<<ADD NAME OF COLLECTION YOU WANT TO FETCH IN POSTMAN>>?retryWrites=true&w=majority
+// DB_CONNECTION = mongodb+srv://<userName>:<Password>@<Cluster>.e3hjh.mongodb.net/<<ADD NAME OF COLLECTION YOU WANT TO FETCH IN POSTMAN>>?retryWrites=true&w=majority
